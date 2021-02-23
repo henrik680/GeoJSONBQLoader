@@ -1,0 +1,9 @@
+[{
+        "name": "id", "type": "INT64", "mode": "REQUIRED"
+    }, {
+        "name": "lan_namn", "type": "STRING", "mode": "REQUIRED"
+    }, {
+        "name": "geo_point_2d", "type": "GEOGRAPHY", "mode": "REQUIRED"
+    }, {
+        "name": "geometry", "type": "GEOGRAPHY", "mode": "REQUIRED"
+    }]

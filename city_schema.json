@@ -1,0 +1,13 @@
+[
+    {
+        "name": "id", "type": "INT64", "mode": "REQUIRED"
+    },{
+        "name": "lan_code", "type": "INT64", "mode": "REQUIRED"
+    }, {
+        "name": "kom_namn", "type": "STRING", "mode": "REQUIRED"
+    }, {
+        "name": "geo_point_2d", "type": "GEOGRAPHY", "mode": "REQUIRED"
+    }, {
+        "name": "geometry", "type": "GEOGRAPHY", "mode": "REQUIRED"
+    }
+]
