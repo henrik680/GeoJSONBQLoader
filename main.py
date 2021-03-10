@@ -17,8 +17,9 @@ def process_file(input_file, output_file):
             for obj in features:
                 props = obj['properties']  # a dictionary
                 props['geometry'] = json.dumps(obj['geometry'])  # make the geometry a string
-                p = geojson.Point((props['geo_point_2d'][0], props['geo_point_2d'][1]))
-                props['geo_point_2d'] = geojson.dumps(p)
+                if props.get('geo_point_2d'):
+                    p = geojson.Point((props['geo_point_2d'][0], props['geo_point_2d'][1]))
+                    props['geo_point_2d'] = geojson.dumps(p)
                 json.dump(props, fp=ofp)
                 print('', file=ofp)  # newline
                 if schema is None:
